@@ -1,0 +1,45 @@
+{
+  "name": "yuki",
+  "version": "0.0.1",
+  "description": "A discord bot made using the nagato bot core",
+  "main": "src/index.js",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "bluebird": "^3.5.0",
+    "chisarok": "^0.1.0",
+    "dice-expression-evaluator": "^0.1.2",
+    "eris": "github:abalabahaha/eris#dev",
+    "js-yaml": "^3.9.1",
+    "kitsu": "https://github.com/hsiW/kitsu.git#v0.1.0",
+    "mathjs": "^3.16.1",
+    "moment": "^2.18.1",
+    "nagato": "hsiw/nagato#0.1.2",
+    "nani": "^1.2.0",
+    "node-osu": "^1.2.0",
+    "pg": "^6.4.1",
+    "raven": "^2.1.1",
+    "redis": "^2.8.0",
+    "sequelize": "^4.5.0",
+    "ws": "^3.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.7.2",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "sequelize-cli": "^2.8.0"
+  },
+  "engines": {
+    "node": ">=7.6.0"
+  },
+  "keywords": [
+    "discord"
+  ],
+  "author": "Mei Boudreau <xanizl@me.com>",
+  "contributors": [
+    "Zeyla Hellyer <zey@zey.moe>"
+  ],
+  "license": "UNLICENSED"
+}

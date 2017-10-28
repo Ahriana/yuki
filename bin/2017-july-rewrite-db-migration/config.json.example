@@ -1,0 +1,13 @@
+{
+  "channel_guild_map": "",
+  "db": {
+    "mysql": {
+      "db_name": "",
+      "host": "",
+      "password": "",
+      "username": ""
+    }
+  },
+  "json_folder": "",
+  "models_folder": ""
+}

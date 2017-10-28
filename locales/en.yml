@@ -1,0 +1,1462 @@
+action:
+  disabled: disabled
+  enabled: enabled
+  muted: muted
+  unmuted: unmuted
+
+c:
+  8ball:
+    answer: The magic 8ball reads, **{{response}}**.
+    responses:
+      0: Signs point to yes.
+      1: Yes.
+      2: Reply hazy, try again.
+      3: Without a doubt.
+      4: My sources say no.
+      5: As I see it, yes.
+      6: You may rely on it.
+      7: Concentrate and ask again.
+      8: Outlook not so good.
+      9: It is decidedly so.
+      10: Better not tell you now.
+      11: Very doubtful.
+      12: Yes - definitely.
+      13: It is certain.
+      14: Cannot predict now.
+      15: Most likely.
+      16: Ask again later.
+      17: My reply is no.
+      18: Outlook good.
+      19: Don't count on it.
+
+  airing:
+    error:
+      retrieval: There was an error getting airing anime.
+
+    next_airing_in: Episode {{number}} will air in about {{time}}.
+
+  anime:
+    error:
+      searching: There was an error searching for **{{input}}**.
+
+    no_results: No anime named **{{input}}** found.
+
+  avatar:
+    author: "{{name}}'s Avatar"
+
+  blacklist:
+    error:
+      guild: Error blacklisting that guild.
+      none: "{{value}} is not a user or guild seen by the bot."
+      user: Error blacklisting that user.
+
+    success:
+      guild: Successfully blacklisted the passed guild.
+      user: Successfully blacklisted the passed user.
+
+  calculate:
+    no_argument: You must pass an expression to be calculated.
+
+  call:
+    everyone: ☎ @everyone, **{{user}}** would like to have a call! ☎
+    no_everyone: ☎ Everyone, **{{user}}** would like to have a call! ☎
+
+  catgirl:
+    error:
+      retrieval: There was an error getting a catgirl image.
+
+    author: Catgirl Image URL
+
+  channelmute:
+    error:
+      update: There was an error updating the channel mute setting.
+
+    muted: The channel has been muted.
+    unmuted: The channel has been unmuted.
+
+  character:
+    error:
+      retrieval: There was an error searching for **{{input}}**.
+
+    no_result: No character found for **{{input}}**.
+
+  checkprefix:
+    has: >-
+      The current prefix is `{{prefix}}`. If you'd like to change this prefix,
+      you can use `yuki setprefix [new prefix]`.
+
+      This requires the command user to have the `Manage Server` permission.
+    none: >-
+      You currently have no custom prefix set, however the default prefixes
+      {{prefixes}} can be used.
+
+
+      If you'd like to set a custom prefix you can use `yuki setprefix
+      [new prefix]`.
+
+      This requires the command user to have the `Manage Server` permission.
+
+  clean:
+    error:
+      deleting: There was an error deleting messages.
+
+    finished: >-
+      Finished cleaning **{{amount}}** bot messages in the last {{input}}
+      messages of {{mention}}.
+
+  cry:
+    error:
+      retrieval: There was an error retrieving that cry image.
+
+    author: Cry Image/Gif URL
+
+  cuddle:
+    error:
+      retrieval: There was an error retrieving that cuddle image.
+
+    other: "{{userA}} was cuddled by {{userB}}."
+    self: "{{user}} was cuddled."
+
+  dance:
+    error:
+      none: No dance images found.
+      retrieval: There was an error retrieving that dance image.
+
+    author: Dance Gif URL
+
+  disabledcommands:
+    error:
+      update: There was an error updating your server settings.
+
+    count: "Currently disabled commands(total: {{total}})"
+    none: There are currently no commands disabled.
+
+  gif:
+      none_found: No gifs found with the search terms `{{search}}`.
+
+  hug:
+    error:
+      retrieval: There was an error retrieving that hug image.
+
+    other: "{{userA}}, (>^_^)> <(^.^<), from {{userB}}."
+    self: (>^_^)> <(^.^<)
+
+  image:
+    none_found: No images found with the search terms `{{search}}`.
+
+  info:
+    author_name: |-
+      {{name}} Info
+    bot_invite: Bot Invite
+    default_prefixes: Default Prefixes
+    developers: Developers
+    discord_library: Discord Library
+    disclaimer: >-
+      Disclaimer: Yuki stores information you provide when modifying your
+      profile.
+    donate: Donate to the Development of {{name}}
+    help_command:
+      plural_optional: Help Command(s)
+    framework: Running Nagato v{{version}}
+    support_server: Support Server
+
+  kiss:
+    error:
+      retrieval: There was an error retrieving that kiss image.
+
+    other: "{{userA}} was kissed by {{userB}}."
+    self: "{{user}} was kissed."
+
+  letsplay:
+    everyone: 🎮 @everyone, **{{user}}** would like to play {{game}}! 🎮
+    no_everyone: 🎮 Everyone, **{{user}}** would like to play {{game}}! 🎮
+
+  listen:
+    error:
+      already_connected: This bot is already connected to that voice channel.
+      connect: There was an error connecting to that voice channel.
+      no_channel: You must be in a **Voice Channel** for me to connect to one.
+
+    success: Sucessfully joined the Voice Channel, **{{channel}}**.
+
+  manga:
+    error:
+      retrieval: There was an error searching for **{{input}}**.
+
+    no_result: No manga named **{{input}}** found.
+
+  nolewd:
+    error:
+      none: No nolewd iamges found.
+      retrieval: There was an error retrieving that nolewd image.
+
+    author: No Lewds URL
+
+  nowplaying:
+    anime: Anime Name
+    artist: Current Artist
+    current: Current Song
+    info: Now Playing info for Listen.moe
+    listeners: "Current # of Listeners: {{listeners}}"
+    none: N/A
+    previous: Previous Song
+    prior: Prior to Previous Song
+    requested: Requested by
+
+  osu:
+    error:
+      retrieval: There was an error getting the user **{{search}}**.
+
+    accuracy: Accuracy
+    country_rank: Country Rank
+    global_rank: Global Rank
+    level: Level
+    name: Osu Stats for {{name}}
+    no_result: No user named **{{search}}** found.
+    play_count: Play Count
+    pp: PP
+
+  pat:
+    error:
+      retrieval: There was an error retrieving that pat image.
+
+    other: "{{userA}} had their head patted by {{userB}}."
+    self: "{{user}} had their head patted."
+
+  poke:
+    error:
+      retrieval: There was an error retrieving that poke image.
+
+    other: "{{userA}} was poked by {{userB}}."
+    self: "{{user}} was poked."
+
+  pout:
+    error:
+      retrieval: There was an error retrieving that pout image.
+
+    author: Pout Image/Gif URL
+
+  pun:
+    error:
+      retrieval: There was an error getting a pun.
+      none: No puns found.
+
+  pick:
+    choice_amount: >-
+      You must pass at least 2 things to pick from, for example
+      `yuki pick heads|tails` to pick between `heads` and `tails`.
+    chosen: I pick **{{choice}}**.
+
+  ping:
+    stage1: "PONG! | Shard latency: **{{latency}}ms**"
+    stage2: "REST API: **{{diff}}ms**"
+
+  quote:
+    error:
+      retrieval: There was an error retrieving a quote.
+
+    no_result: No quotes found.
+
+  searchquotes:
+    no_result: There were no quotes found that contain `{{search}}`.
+
+  setprefix:
+    error:
+      update: There was an error updating the server prefix.
+
+  setting:
+    error:
+      argument_required: You need to say the name of the setting to change.
+      unknown_setting: "**{{setting}}** is an unknown setting."
+
+    available_settings: >-
+      Available settings:
+
+      - **channelmute**: mutes the current channel
+
+      - **leave**: set the message to say when a member leaves the server
+
+      - **setprefix**: sets the new prefix for the server
+
+      - **tableflip**: toggle or set the tableflip setting
+
+      - **toggle**: toggle a command off/on
+
+      - **welcome**: set the message to say when a member joins the server
+
+
+      Use `-help setting`, `-help welcome`, `-help tableflip`, etc. for
+      more information.
+
+  serverinfo:
+    title: Info about {{serverName}}
+
+  shipgirl:
+    none_found: I didn't find any images for {{ship}} so heres one for {{name}}
+
+  slap:
+    error:
+      retrieval: There was an error retrieving that slap image.
+
+    other: "{{userA}} was slapped by {{userB}}."
+    self: "{{user}} was slapped."
+
+  stats:
+    total_commands_used: Total Commands Used
+    user_average: User Average
+    yuki_statistics: Yuki Statistics
+
+  stop:
+    error:
+      no_channel: Not currently in a voice channel.
+
+    leave:
+      channel: Successfully left **{{channel}}**.
+      no_channel: Successfully left the voice channel.
+
+  tableflip:
+    error:
+      update: There was an error updating your server settings.
+
+    disabled: Tableflipping has been disabled ┬─┬﻿ ノ( ゜-゜ノ)
+    enabled: Tableflipping has been enabled (╯°□°）╯︵ ┻━┻
+
+  toggle:
+    error:
+      update: There was an error toggling the command.
+      untoggleable: The {{name}} command cannot be toggled off.
+
+    no_argument: |-
+      You must say the name of the command to toggle.
+
+      For example, `yuki toggle ping`.
+    not_command: "`{{command}}` can't be toggled because it isn't a command."
+    toggled: The command {{command}} has been {{status}}.
+
+  reload:
+    error:
+      commands: There was an error reloading commands.
+      events: There was an error reloading events.
+
+    success: Reloaded all commands & events.
+
+  remind:
+    error:
+      saving: There was an error saving that reminder.
+
+    with_note: Okay, I'll remind you about **{{note}}** in about {{time}}.
+    without_note: Okay, I'll remind you in about {{time}}.
+    time_up:
+      with_note: >-
+        Time's up, <@{{id}}>! You asked to be reminded about **{{content}}**.
+      without_note: Time's up, <@{{id}}>!
+
+  restart:
+    success: Restarting...
+
+  roll:
+    bad_input: There was an error with that dice roll.
+    max_count: A max of 100 die can be rolled at once.
+    max_sides: a die can have a max of 100 sides.
+    rolled: You rolled a **{{result}}**.
+
+  shell:
+    sucess: "```Successfully ran shell command.```"
+
+  smug:
+    error:
+      none: No smug images found.
+      retrieval: There was an error retrieving that smug image.
+
+    author: Smug Image/Gif URL
+
+  tag:
+    # `all` applies to multiple tag commands
+    all:
+      error:
+        management_permission: You don't have permission to manage that tag.
+        nonexistent: A tag named **{{name}}** doesn't exist.
+        no_param:
+          name: You must specify a tag name.
+          value: You must specify a tag value.
+
+    create:
+      error:
+        creating: There was an error making your tag.
+        exists: The tag **{{name}}** already exists.
+
+      done: Created a tag named **{{name}}**.
+
+    delete:
+      error:
+        deleting: There was an error deleting the tag.
+
+      done: Deleted the tag named **{{name}}**.
+
+    edit:
+      error:
+        editing: There was an error editing your tag.
+        not_owner: You must be the owner of the tag to edit it.
+
+      done: Your tag was successfully edited.
+
+    get:
+      error:
+        retrieval: There was an error retrieving the tag.
+
+      nonexistent: The tag **{{name}}** doesn't exist.
+
+    info:
+      error:
+        retrieval: There was an error retrieving the tag info.
+
+    list:
+      error:
+        retrieval: There was an error retrieving the tags for your server.
+
+      count: "There are a total of **{{number}}** tags in this server:"
+
+  time:
+    error:
+      location: There was an error getting the location for **{{location}}**.
+      time: There was an error getting the time for **{{location}}**.
+
+    result: "Current time: {{time}}"
+
+  urban:
+    error:
+      search: There was an error with your search.
+
+    author: Definition by {{author}}
+    no_result: Your search for `{{input}}` returned no results.
+    thumbs_down: Thumbs Down
+    thumbs_up: Thumbs Up
+
+  userquote:
+    error:
+      no_channel: "You need to setup a #quotes channel."
+      permission: I don't have permission to post quotes in {{mention}}.
+      posting: There was an error posting to the quotes channel.
+
+    footer: From {{type}} chat
+    no_quote: You'll need to have something to quote.
+    text: text
+    voice: voice
+
+  weather:
+    error:
+      location: There was an error getting the location for **{{location}}**.
+      weather: There was an error getting the weather for **${{location}}**.
+
+    feels: Feels Like
+    footer: Powered by Dark Sky
+    precip_inten: Precipitation Intensity
+    precip_prob: Precipitation Probabilty
+    summary: Current Summary
+    temp: Current Temperature
+
+    day: |-
+      **High**: {{highC}}°C / {{highF}}°F
+      **Low**: {{lowC}}°C / {{lowF}}°F
+      **Precip**: {{precipProb}}%
+
+  weedle:
+    message: "**Weedle Weedle Weedle Wee**"
+
+  whois:
+    error:
+      retrieval: Unable to get info for the user `{{id}}`.
+
+    creation_date: Creation Date
+    join_date: Join Date
+    user_id: User ID
+
+  youtube:
+    error:
+      search: There was an error searching for **{{input}}**.
+
+    no_result: No YouTube videos found.
+    result: |-
+      I searched YouTube for **{{input}}** and found this:
+      https://www.youtube.com/watch?v={{result}}
+
+discord:
+  channel:
+    name:
+      singular: Channel
+      plural: Channels
+
+  guild:
+    afk_channel: AFK Channel
+    afk_channel_timeout: AFK Channel Timeout
+    default_notifications:
+      name: Default notifications
+      0: All messages
+      1: Only @mentions
+    explicit_content_filter:
+      name: Explicit content filter
+      0: Don't scan any messages.
+      1: Scan messages from members without a role.
+      2: Scan messages sent by all members.
+    name:
+      singular: Guild
+      plural: Guilds
+    nickname:
+      singular: Nickname
+      plural: Nicknames
+    verification:
+      name: Verification Level
+      0: Unrestricted
+      1: Must have a verified email on their Discord account.
+      2: Must also be registered on Discord for longer than 5 minutes.
+      3: Must also be a member of this server for longer than 10 minutes.
+      4: Must have a verified phone on their Discord account.
+
+    region:
+      name: Region
+
+  shard:
+    singular: Shard
+    plural: Shards
+
+  user:
+    game:
+      playing: Playing
+      streaming: Streaming
+    name:
+      singular: User
+      plural: Users
+    status:
+      dnd: Do Not Disturb
+      idle: Idle
+      invisible: Invisible
+      offline: Offline
+      online: Online
+
+help:
+  8ball:
+    description: >-
+      Ask the magic eightball a question. Posts a random response.
+    usage: |-
+      `yuki eightball`
+
+  airing:
+    description: >-
+      Posts a paged list of currently airing anime. Reaction numbers are used
+      to go to that page. The last reaction to the right is used to delete the
+      message.
+
+      Requires the bot to have the "Add Reactions" permission.
+    usage: |-
+      `yuki airing`
+
+  anime:
+    description: >-
+      Posts information about the inputted anime title. Defaults to "The
+      Melancholy of Haruhi Suzumiya".
+
+      Requires the bot to have the "Embed Links" permission.
+    examples: |-
+      `yuki anime` Search for the default anime, The Melancholy of Haruhi Suzumiya
+      `yuki anime Beyond the Boundary` Searches for the anime, Beyond the Boundary
+    usage: |-
+      `yuki anime`
+      `yuki anime [anime name]`
+
+  avatar:
+    description: >-
+      Posts a users avatar.
+
+      Requires the bot to have the "Embed Links" permission.
+    examples: |-
+      `yuki avatar` Get your own avatar
+      `yuki avatar @user` Get the avatar of the mentioned user
+      `yuki avatar [username]` Get the avatar of the user with the specified username
+      `yuki avatar [nickname]` Get the avatar of the user with the specified nickname
+    usage: |-
+      `yuki avatar`
+      `yuki avatar [username]`
+      `yuki avatar [nickname]`
+      `yuki avatar [@userMention]`
+
+  blacklist:
+    description: >-
+      Blacklist the passed user id or guild id.
+    examples: |-
+      `yuki blacklist 244567637332328449` Blacklist a guild
+      `yuki blacklist 87600987040120832` Blacklist a user
+    usage: |-
+     `yuki blacklist [guild id]`
+     `yuki blacklist [user id]`
+
+  calculate:
+    description: >-
+      Posts the result of the math expression passed. Can also be used for
+      basic unit conversion.
+    examples: |-
+      `yuki calculate 2 * 10 + 10` Solve an expression
+      `yuki calculate 5cm to inches` Unit conversion
+    usage: |-
+      `yuki calculate [expression]`
+      `yuki calculate [number](current units) to (desired units)`
+
+  call:
+    description: >-
+      Tell everyone you'd like to have a call. Uses an "@everyone" mention if
+      the user has permission to do so.
+    usage: |-
+      `yuki call`
+
+  catgirl:
+    description: >-
+      Posts a random catgirl.
+
+      Requires the bot to have the "Embed Links" permission.
+    usage: |-
+      `yuki catgirl`
+
+  channelmute:
+    description: >-
+      Mutes the current channel so that Yuki does not respond to commands.
+
+
+      This command can be re-used to unmute the channel, and bypasses the
+      channel mute setting.
+    examples: |-
+      `yuki channelmute` Mutes the current channel.
+    usage: |-
+      `yuki channelmute`
+
+
+  character:
+    description: >-
+      Posts information about the inputted character name. Defaults to "Haruhi
+      Suzumiya".
+
+      Requires the bot to have the "Embed Links" permission.
+    examples: |-
+      `yuki character` Search for the default character, Haruhi Suzumiya
+      `yuki character Yuki Nagato` Searches for the character, Yuki Nagato
+    usage: |-
+      `yuki character`
+      `yuki character [character name]`
+
+  checkprefix:
+    description: >-
+      Posts the current prefix/prefixes for the server.
+    usage: |-
+      `yuki checkprefix`
+
+  clean:
+    description: >-
+      Removes the bots messages from the current channel. Removes the passed
+      number of messages but defaults to 50 messages if no amount is provided. A
+      maximum of 200 messages can be cleaned at once.
+    examples: |-
+      `yuki clean` Defaults to removing the bots messages in the last 50 messages
+      `yuki clean 76` Removes the bots messages in the last 76 messages
+    usage: |-
+      `yuki clean`
+      `yuki clean [amount]`
+
+  cry:
+    description: >-
+      Posts a random cry image/gif.
+
+      Requires the bot to have the "Embed Links" permission.
+    usage: |-
+      `yuki cry`
+
+  cuddle:
+    description: >-
+      Cuddle with a user.
+
+      Requires the bot to have the "Embed Links" permission.
+    examples: |-
+      `yuki cuddle` Get cuddled
+      `yuki cuddle @user` Cuddle the mentioned user
+      `yuki cuddle [username]` Cuddle the user with the specified username
+      `yuki cuddle [nickname]` Cuddle the user with the specified nickname
+    usage: |-
+      `yuki cuddle`
+      `yuki cuddle [username]`
+      `yuki cuddle [nickname]`
+      `yuki cuddle [@userMention]`
+
+  dance:
+    description: >-
+      Posts a random dance gif.
+
+      Requires the bot to have the "Embed Links" permission.
+    usage: |-
+      `yuki dance`
+
+  disabledcommands:
+    description: >-
+      Posts a list of the currently disabled commands.
+    usage: |-
+      `yuki disabledcommands`
+
+  eval:
+    description: >-
+      Evaluate and run the passed code.
+    examples: |-
+      `yuki eval 1+1` Evaluate the code 1+1
+    usage: |-
+      `yuki eval [code to evaluate]`
+
+  eventstats:
+    description: >-
+      Posts the event count for all shards. A number can be passed to get the
+      event counts for that shard.
+    examples: |-
+      `yuki eventstats` Get the event count for all shards
+      `yuki eventstats 1` Get the event count for shard 1
+    usage: |-
+      `yuki eventstats [shard id]`
+
+  gif:
+    description: >-
+      Search for a gif using the search terms provided. Defaults to "Yuki
+      Nagato".
+
+      Requires the bot to have the "Embed Links" permission.
+    examples: |-
+      `yuki gif` Get a gif using "Yuki Nagato" as the search
+      `yuki gif kancolle` Get a gif using "kancolle" as the search
+    usage: |-
+      `yuki gif [search terms]`
+
+  hug:
+    description: >-
+      Give a user a hug.
+
+      Requires the bot to have the "Embed Links" permission.
+    examples: |-
+      `yuki hug` Get hugged
+      `yuki hug @user` Hug the mentioned user
+      `yuki hug [username]` Hug the user with the specified username
+      `yuki hug [nickname]` Hug the user with the specified nickname
+    usage: |-
+      `yuki hug`
+      `yuki hug [username]`
+      `yuki hug [nickname]`
+      `yuki hug [@userMention]`
+
+  image:
+    description: >-
+      Search for an image using the search terms provided. Defaults to "Yuki
+      Nagato".
+
+      Requires the bot to have the "Embed Links" permission.
+    examples: |-
+      `yuki image` Get a image using "Yuki Nagato" as the search
+      `yuki image kancolle` Get a image using "kancolle" as the search
+    usage: |-
+      `yuki image [search terms]`
+
+  info:
+    description: >-
+      Posts info about the bot, including but not limited to: default prefixes,
+      the help commands, and a link to the support server.
+
+      Requires the bot to have the "Embed Links" permission.
+    usage: |-
+      `yuki info`
+
+  kiss:
+    description: >-
+      Give a user a kiss.
+
+      Requires the bot to have the "Embed Links" permission.
+    examples: |-
+      `yuki kiss` Get kissed
+      `yuki kiss @user` Kiss the mentioned user
+      `yuki kiss [username]` Kiss the user with the specified username
+      `yuki kiss [nickname]` Kiss the user with the specified nickname
+    usage: |-
+      `yuki kiss`
+      `yuki kiss [username]`
+      `yuki kiss [nickname]`
+      `yuki kiss [@userMention]`
+
+  leave:
+    description: >-
+      Sets the message to post in the current channel when a member leaves the
+      server.
+
+
+      To remove the leave message, just say `yuki leave`.
+
+
+      You may use special keywords that are replaced by Yuki, like `[UserName]`
+      being replaced by the name of the member who left.
+
+
+      The following are a list of special keywords:
+
+      - `[GuildName]` is replaced with the name of the server
+
+      - `[ChannelMention]` mentions the current channel
+
+      - `[ChannelName]` says the name of the current channel
+
+      - `[UserMention]` mentions the user who left
+
+      - `[UserName]` says the name of the user who left
+    examples: |-
+      Say the name of the user who left:
+      `yuki leave Goodbye, [UserName]!`
+      Results in a message like the following when someone leaves:
+      `Goodbye, John!`
+
+      Remove the leave message:
+      `yuki leave`
+    usage: |-
+      `yuki leave`
+      `yuki leave [content]`
+
+  lenny:
+    description: >-
+      Posts a lenny of your choosing. These include sad, sneaky, nose and old
+      lenny faces. Defaults to the basic lenny.
+    examples: |-
+      `yuki lenny` A default lenny
+      `yuki lenny sad` A sad lenny
+      `yuki lenny sneaky` A sneaky lenny
+      `yuki lenny nose` A lenny with a big nose
+      `yuki lenny old` An older lenny
+    usage: |-
+      `yuki lenny`
+      `yuki lenny [type]`
+
+  letsplay:
+    description: >-
+      Tell everyone you'd like to play a game. A game can be specified to play.
+      Uses an "@everyone" mention if the user has permission to do so.
+    examples: |-
+      `yuki letsplay` Ask to play "a game" with everyone
+      `yuki letsplay Overwatch` Ask to play "Overwatch" with everyone
+    usage: |-
+      `yuki letsplay`
+      `yuki letsplay [game]`
+
+  listen:
+    description: >-
+      Stream music from listen.moe, use this command while in a voice channel to
+      get the bot to join that voice channel and begin playing music.
+    usage: |-
+      `yuki listen`
+
+  manga:
+    description: >-
+      Posts information about the inputted manga title. Defaults to "The
+      Melancholy of Haruhi Suzumiya".
+
+      Requires the bot to have the "Embed Links" permission.
+    examples: |-
+      `yuki manga` Search for the default manga, The Melancholy of Haruhi Suzumiya
+      `yuki manga Re:Life` Searches for the anime, Re:Life
+    usage: |-
+      `yuki manga`
+      `yuki manga [manga name]`
+
+  nolewd:
+    description: >-
+      Posts a random blush/no lewd gif/image.
+
+      Requires the bot to have the"Embed Links" permission.
+    usage: |-
+      `yuki nolewd`
+
+  nowplaying:
+    description: >-
+      Posts the currently playing song info from listen.moe, used for getting
+      the currently playing song from `listen`.
+
+      Requires the bot to have the "Embed Links" permission.
+    usage: |-
+      `yuki nowplaying`
+
+  osu:
+    description: >-
+      Posts info about a users Osu profile.
+
+      Requires the bot to have the "Embed Links" permission.
+    examples: |-
+      `yuki osu` Get osu info using your current username for the user search
+      `yuki osu` Get osu info using your osu setting in the profile command
+      `yuki osu girl` Get osu info for the user "girl"
+    usage: |-
+      `yuki osu`
+      `yuki osu [user]`
+
+  pat:
+    description: >-
+      Give a user a head pat.
+
+      Requires the bot to have the "Embed Links" permission.
+    examples: |-
+      `yuki pat` Get your head patted
+      `yuki pat @user` Pat the mentioned user
+      `yuki pat [username]` Pat the user with the specified username
+      `yuki pat [nickname]` Pat the user with the specified nickname
+    usage: |-
+      `yuki pat`
+      `yuki pat [username]`
+      `yuki pat [nickname]`
+      `yuki pat [@userMention]`
+
+  pick:
+    description: >-
+      Picks between the passed arguments.
+
+      Arguments are separated by the `|` character and at least two arguments
+      must be passed.
+    examples: |-
+      `yuki pick heads|tails` Pick between heads and tails
+    usage: |-
+      `yuki pick [argument]|[argument]`
+
+  ping:
+    description: >-
+      Posts the current REST and shard latency for the bot.
+    usage: |-
+      `yuki ping`
+
+  poke:
+    description: >-
+      Poke a user.
+
+      Requires the bot to have the "Embed Links" permission.
+    examples: |-
+      `yuki poke` Get poked
+      `yuki poke @user` Poke the mentioned user
+      `yuki poke [username]` Poke the user with the specified username
+      `yuki poke [nickname]` Poke the user with the specified nickname
+    usage: |-
+      `yuki poke`
+      `yuki poke [username]`
+      `yuki poke [nickname]`
+      `yuki poke [@userMention]`
+
+  pout:
+    description: >-
+      Posts a random pout gif/image.
+
+      Requires the bot to have the "Embed Links" permission.
+    usage: |-
+      `yuki pout`
+
+  profile:
+    description: >-
+      Create a customizable profile linked to your Discord account, listing
+      information like your country, Kitsu profile, name, and more.
+
+
+      The following is a list of profile options:
+
+      - `age`
+
+      - `animeplanet`
+
+      - `avatar`
+
+      - `bio`
+
+      - `birthday`
+
+      - `color`
+
+      - `country`
+
+      - `kitsu`
+
+      - `icon`
+
+      - `location`
+
+      - `myanimeplanet`
+
+      - `name`
+
+      - `osu`
+
+      - `status`
+    examples: >-
+      `yuki profile` Will show your profile.
+
+      `yuki profile steve` Will show steve's profile.
+
+      `yuki profile @jane` Will show the profile of someone you mentioned, in
+      this case jane.
+
+      `yuki profile edit name Jane Doe` Will edit your profile's name to "Jane
+      Doe".
+
+      `yuki profile age 21` Will edit the age on your profile to 21. This is
+      shorthand for the above command.
+    usage: |-
+      `yuki profile`
+      `yuki profile [username]`
+      `yuki profile [nickname]`
+      `yuki profile [@userMention]`
+      `yuki profile [settingName] [value]`
+
+  pun:
+    description: >-
+      Send a random pun.
+    usage: |-
+      `yuki pun`
+
+  quote:
+    description: >-
+      Posts a random anime quote.
+
+      Requires the bot to have the "Embed Links" permission.
+    usage: |-
+      `yuki quote`
+
+  reload:
+    description: >-
+      Reload all commands and events to get the most recent code.
+    usage: |-
+      `yuki reload`
+
+  remind:
+    description: >-
+      Set a reminder to be reminded of something after a given time. The time
+      is given in the format `HH:MM:SS`.
+    examples: >-
+      `yuki remind 01:20` Set a reminder for 1 minute and 20 seconds
+
+      `yuki remind 04:10 Ice cream` Set a reminder to be reminded of ice cream
+      in 4 minutes and 10 seconds
+    usage: |-
+      `yuki remind [time] <reminder>`
+
+  restart:
+    description: >-
+      Shut down the bot, will be restarted automatically if using something
+      like supervisor or pm2.
+    usage: |-
+      `yuki restart`
+
+  roll:
+    description: >-
+      Roll a simulated die. A die is defined by \#d\# with \# being any number
+      between 1 and 100.
+
+      Dice can also be added and subtracted from one another. Defaults to
+      rolling d6.
+    examples: |-
+      `yuki roll 10d6` Roll 10 d6's
+      `yuki roll 1d10 + 4d6 - 5dd26` Add and subtract dice rolls together
+    usage: |-
+      `yuki roll [#d#]`
+
+  searchquotes:
+    description: >-
+      Search through the quotes and post a random quote containing the passed
+      search text.
+
+      Requires the bot to have the "Embed Links" permission.
+    examples: |-
+      `yuki searchquotes text` Posts a random quote containing "text"
+    usage: |-
+      `yuki searchquotes [search text]`
+
+  serverinfo:
+    description: >-
+      Posts info about the server, including but not limited to: server region,
+      the owner, and an embedded image of the server icon.
+
+      Requires the bot to have the "Embed Links" permission.
+    usage: |-
+      `yuki serverinfo`
+
+  setprefix:
+    description: >-
+      Sets the custom, server-specific prefix that Yuki will respond to.
+
+
+      When a custom prefix is used, Yuki will start responding to that prefix in
+      the entire server. For example, if you set the custom prefix to `$`, Yuki
+      will respond to `$ping`, `$catgirl`, etc.
+
+      You can remove the custom prefix by saying `yuki setprefix`.
+
+      Yuki will always respond to the the `yuki` prefix. For example,
+      `yuki ping`.
+    examples: |-
+      `yuki setprefix $` Set the custom prefix to `$`
+      `yuki setprefix` Remove the custom prefix.
+    usage: |-
+      `yuki setprefix`
+      `yuki setprefix [prefix]`
+
+  setting:
+    description: >-
+      Used to modify a server setting. This is longform of other commands such
+      as `yuki channelmute`, `yuki setprefix`, or `yuki welcome`.
+    examples: |-
+      `yuki setting channelmute` Runs the `channelmute` command.
+      `yuki setting tableflip` Runs the `tableflip` command.
+    usage: |-
+      `yuki setting [commandName] <commandInformation>`
+
+  shell:
+    description: >-
+      Runs a shell command using the passed text.
+    examples: |-
+      `yuki shell ls` List files and folders in the current directory
+    usage: |-
+      `yuki shell [command to execute]`
+
+  shipgirl:
+    description: >-
+      Posts a random shipgirl. Pass the name of a shipgirl to get images for
+      that shipgirl.
+
+      Requires the bot to have the "Embed Links" permission.
+    examples: |-
+      `yuki shipgirl` Get a random shipgirl
+      `yuki shipgirl urakaze` Get images for Urakaze
+    usage: |-
+      `yuki shipgirl`
+      `yuki shipgirl [shipgirl name]`
+
+  slap:
+    description: >-
+      Slap a user.
+
+      Requires the bot to have the "Embed Links" permission.
+    examples: |-
+      `yuki slap` Get slapped
+      `yuki slap @user` Slap the mentioned user
+      `yuki slap [username]` Slap the user with the specified username
+      `yuki slap [nickname]` Slap the user with the specified nickname
+    usage: |-
+      `yuki slap`
+      `yuki slap [username]`
+      `yuki slap [nickname]`
+      `yuki slap [@userMention]`
+
+  smug:
+    description: >-
+      Posts a random smug image.
+
+      Requires the bot to have the "Embed Links" permission.
+    usage: |-
+      `yuki smug`
+
+  stop:
+    description: |-
+      Get the bot to stop playing music and leave the voice channel.
+
+      Requires the command user to have the "Manage Server" permission
+    usage: |-
+      `yuki stop`
+
+  tableflip:
+    description: |-
+      Toggles whether to react to tableflips (╯°□°）╯︵ ┻━┻
+    examples: |-
+      `yuki tableflip` Toggle whether to react to tableflips.
+      `yuki tableflip on` Turn tableflipping on
+      `yuki tableflip off` Turn tableflipping off
+    usage: |-
+      `yuki tableflip <setting>`
+
+  tag:
+    # the following `all` key is help for the general tag system
+    all:
+      description: Tags, a system for creating user-defined named messages.
+      examples: >-
+        **Using a tag**:
+
+        `yuki tag my-cats-picture`
+
+        _or_
+
+        `yuki tag get my-cats-picture`
+
+
+        **Creating a tag**:
+
+        `yuki tag create a-beautiful-cat https://i.imgur.com/c7QByLd.jpg`
+
+
+        This tag can then be used via:
+
+        `yuki tag a-beautiful-cat`
+
+
+        All tags are server-specific and can only be used in the server it was
+        made in.
+
+
+        **Deleting a tag**:
+
+        `yuki tag delete some-picture-i-dont-like`
+
+        Deleting a tag requires that you either own the tag or have the "Manage
+        Server" or "Administrator" server permission.
+
+
+        **Getting info about a tag**:
+
+        `yuki tag info some-tag-name`
+
+        This tells you who made the tag, when it was created, how many times it
+        has been used, and when it was last used.
+      usage: |-
+        `yuki tag`
+
+    create:
+      description: >-
+        Create a tag with a name and content.
+      examples: |-
+        Creating a short and simple tag:
+        `yuki tag create cat https://i.imgur.com/c7QByLd.jpg`
+
+        Creating a longer, multi-line tag:
+        ```
+        yuki tag create rolelist Here is a list of our roles:
+        - Member
+        - Regular
+        - Mod
+        - Admin
+        ```
+      usage: |-
+        `yuki tag create [name] [content]`
+
+    delete:
+      description: >-
+        Delete a tag by its name.
+
+
+        This requires either owning the tag or having the "Manage Server" or
+        "Administrator" server permission.
+      examples: |-
+        Delete the `some-cat-tag` tag:
+        `yuki tag delete some-cat-tag`
+      usage: |-
+        `yuki tag delete [name]`
+    edit:
+      description: >-
+        Edits a tag's content by its name.
+
+
+        This requires that you own the tag being edited.
+      examples: |-
+        Edit the content of the `snowcat` tag to a new image link:
+        `yuki tag edit snowcat https://i.imgur.com/c7QByLd.jpg`
+      usage: |-
+        `yuki tag edit [name] [content]`
+    get:
+      description: >-
+        Gets a tag's content by its name.
+      examples: |-
+        `yuki tag get whitecat` Get the content of the `whitecat` tag.
+
+        You can also get the content of tags without saying "get":
+        `yuki tag whitecat`
+      usage: |-
+        `yuki tag get [name]`
+        `yuki tag [name]`
+    info:
+      description: >-
+        Gets information about a tag by its name.
+
+
+        This lists the name of the tag, the author if the tag, how many times
+        it has been used, and when it was last used.
+      examples: >-
+        `yuki tag info cat` Retrieve information about the `cat` tag.
+      usage: |-
+        `yuki tag info [name]`
+
+  textquote:
+    description: >-
+      Creates a text quote and posts it to the dedicated quotes channel.
+    examples: >-
+      `yuki textquote insert quote text here` Create a quote with the content,
+      "insert quote text here"
+    usage: |-
+      `yuki textquote [quote text]`
+
+  time:
+    description: >-
+      Posts the current time in the location passed. Defaults to "Akihabara"
+      if no location given.
+
+      Requires the bot to have the "Embed Links" permission.
+    examples: |-
+      `yuki time` Get the current time for "Akihabara"
+      `yuki time toronto` Get the current time for "Toronto"
+    usage: |-
+      `yuki time`
+      `yuki time [location]`
+
+  toggle:
+    description: >-
+      Toggles whether a command is enabled or disabled.
+
+
+      This can be used so server members don't use parts of Yuki that you don't
+      want them to use.
+
+      The `toggle` command can not be toggled.
+    examples: |-
+      `yuki toggle ping` Toggles whether the `ping` command is enabled.
+    usage: |-
+      `yuki toggle [commandName]`
+
+  urban:
+    description: >-
+      Posts an Urban Dictionary entry for the searched terms.
+
+      Requires the bot to have the "Embed Links" permission.
+    examples: |-
+      `yuki urban` Gets the entry for "Yuki Nagato"
+      `yuki urban insert search here` Gets the entry for "insert search here"
+    usage: |-
+      `yuki urban [search terms]`
+
+  voicequote:
+    description: >-
+      Creates a voice quote and posts it to the dedicated quotes channel.
+    examples: >-
+      `yuki voicequote insert quote text here` Create a quote with the content,
+      "insert quote text here"
+    usage: |-
+      `yuki voicequote [quote text]`
+
+  weather:
+    description: >-
+      Posts the current weather in the location passed. The reaction can be
+      pressed to swap back and forth between a current weather view and a week
+      view. Defaults to "Akihabara" if no location given.
+
+      Requires the bot to have the "Embed Links" permission.
+    examples: |-
+      `yuki weather` Get the current weather for "Akihabara"
+      `yuki weather toronto` Get the current weather for "Toronto"
+    usage: |-
+      `yuki weather`
+      `yuki weather [location]`
+
+  weedle:
+    description: >-
+      Posts a "Weedle Weedle Weedle Wee"
+    usage: |-
+      `yuki weedle`
+
+  welcome:
+    description: >-
+      Sets the message to post in the current channel when a member joins the
+      server.
+
+
+      To remove the welcome message, just say `yuki welcome`.
+
+
+      You may use special keywords that are replaced by Yuki, like `[UserName]`
+      being replaced by the name of the member who joined.
+
+
+      The following are a list of special keywords:
+
+      - `[GuildName]` is replaced with the name of the server
+
+      - `[ChannelMention]` mentions the current channel
+
+      - `[ChannelName]` says the name of the current channel
+
+      - `[UserMention]` mentions the user who joined
+
+      - `[UserName]` says the name of the user who joined
+    examples: |-
+      Mention the member who joined and tell them the name of the server:
+      `yuki welcome Welcome to [GuildName], [UserMention]!`
+      Results in a message like the following when someone joins:
+      `Welcome to Cat Appreciation Server, @Jane!`
+
+      Remove the welcome message:
+      `yuki welcome`
+    usage: |-
+      `yuki welcome`
+      `yuki welcome [content]`
+
+  whois:
+    description: >-
+      Posts info on a user.
+
+      Requires the bot to have the "Embed Links" permission.
+    examples: |-
+      `yuki whois` Get info about your discord user
+      `yuki whois @user` Get info on the mentioned user
+      `yuki whois [username]` Get info of the user with the specified username
+      `yuki whois [nickname]` Get info of the user with the specified nickname
+    usage: |-
+      `yuki whois`
+      `yuki whois [username]`
+      `yuki whois [nickname]`
+      `yuki whois [@userMention]`
+
+  youtube:
+    description: >-
+      Search YouTube using the searched terms. Posts the first link found
+      and defaults to "The Melancholy of Haruhi Suzumiya Trailer".
+    examples: |-
+      `yuki youtube` Get the link for "The Melancholy of Haruhi Suzumiya Trailer"
+      `yuki youtube kancolle op` Get the link for "kancolle op"
+    usage: |-
+      `yuki youtube`
+      `yuki youtube [search terms]`
+
+label:
+  age_rating: Age Rating
+  alternate_titles: Alternate Titles
+  average_rating: Average Rating
+  channels: Channels
+  chapters: Chapters,
+  episodes:
+    plural_optional: Episode(s)
+  episode_length: Episode Length
+  id: ID
+  link: Link
+  members: Members
+  member_status: Member Status
+  na: N/A
+  owner: Owner
+  popularity_rank: Popularity Rank
+  rating: Rating
+  roles: Roles
+  status: Status
+  type: Type
+  unknown: Unknown
+  volume:
+    plural_optional: Volume(s)
+  weebsh_footer: Provided by Weeb.sh
+
+permission:
+  connect: >-
+    The bot requires the "Connect" permission to connect to that voice channel.
+  manage_channel: >-
+    Usage of this command requires the "Manage Channel" permission for the
+    current channel.
+  manage_server: >-
+    Usage of this command requires the "Manage Server" permission.
+
+search:
+  max_length: >-
+    Your search query was too long and exceeded the maximum length of 2k
+    characters.
+
+time:
+  date_range: |-
+    {{from}} to {{to}}
+  seconds: |-
+    {{seconds}} seconds

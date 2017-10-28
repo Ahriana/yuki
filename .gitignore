@@ -1,0 +1,18 @@
+# IDE directories and folder
+.idea/
+.vscode/
+
+# Vendor directories
+node_modules/
+
+# Environment-specific config files
+/db/options.json
+/options.yml
+
+# Lockfiles
+package-lock.json
+yarn.lock
+yarn-error.log
+
+# Misc
+/db/seeders/*Ship.js

@@ -1,0 +1,70 @@
+Token: enter.token.here
+
+Eris:
+  defaultImageFormat: jpg
+  defaultImageSize: 2048
+  messageLimit: 0
+  maxShards: 1
+  disableEvents:
+    TYPING_START: true
+
+Owners:
+  - '87600987040120832'
+  - '114941315417899012'
+
+MessageHandler:
+  defaultPrefixes:
+    - mention
+    - 'yuki '
+
+  prefixes:
+    - '&'
+
+  userRestricted:
+    - '87600987040120832'
+    - '114941315417899012'
+
+Logger:
+  logCommands: true
+  logInfo: true
+  logWarn: true
+  logError: true
+  logDebug: false
+  logColour: true
+
+Help:
+  helpCommands:
+    - help
+    - commands
+
+  helpFormat: embed
+
+APIKeys:
+    anilist: [user, token]
+
+    carbonitex: enter.key.here
+
+    darksky: enter.key.here
+
+    botspw: enter.key.here
+
+    discordbotsorg: enter.key.here
+
+    googleMaps: enter.key.here
+
+    googleTime: enter.key.here
+
+    imgur: enter.key.here
+
+    osu: enter.key.here
+
+    sentryURL: enter.key.here
+
+    webhook: enter.key.here
+
+    weebApi: enter.key.here
+
+    youtube: enter.key.here
+
+redis:
+    prefix: enter.prefix.here

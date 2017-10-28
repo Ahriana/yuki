@@ -1,0 +1,11 @@
+{
+  "name": "2017-july-rewrite-db-migration",
+  "version": "0.1.0",
+  "main": "index.js",
+  "author": "Zeyla Hellyer <zey@zey.moe>",
+  "license": "Unlicensed",
+  "dependencies": {
+    "mysql2": "^1.4.0",
+    "sequelize": "^4.4.2"
+  }
+}

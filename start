@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+
+if [ "$1" = "dev" -o "$1" = "" ]; then
+    node ./src/index.js
+elif [ "$1" = "install" ]; then
+    yarn install
+    yarn install --only=dev
+else
+    echo "Unknown argument: $1"
+fi
