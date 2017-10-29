@@ -68,3 +68,7 @@ APIKeys:
 
 redis:
     prefix: enter.prefix.here
+
+image_service:
+  host: localhost
+  port: 1

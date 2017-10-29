@@ -9,6 +9,8 @@
     "chisarok": "^0.1.0",
     "dice-expression-evaluator": "^0.1.2",
     "eris": "github:abalabahaha/eris#dev",
+    "google-protobuf": "^3.4.0",
+    "grpc": "^1.0.0",
     "js-yaml": "^3.9.1",
     "kitsu": "https://github.com/hsiW/kitsu.git#v0.1.0",
     "mathjs": "^3.16.1",

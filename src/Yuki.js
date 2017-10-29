@@ -1,5 +1,6 @@
 const DataManager = require('./data/DataManager');
 const DatabaseMiddleware = require('./DatabaseMiddleware');
+const Grpc = require('grpc');
 const Nagato = require('nagato');
 const Raven = require('raven');
 const Redis = require('redis');
@@ -54,6 +55,8 @@ module.exports = class Yuki extends Nagato {
     this.loadEvents(`${__dirname}/events/`);
 
     this.loadMiddleware(DatabaseMiddleware);
+
+    this._createImageServiceClient();
   }
 
   get redisPrefix() {
@@ -89,6 +92,26 @@ module.exports = class Yuki extends Nagato {
   }
 
   /**
+   * Shortcut for generating an image over the gRPC client to the image service,
+   * returning a promise.
+   *
+   * @param {ImageGenerationRequest} req The request to send to the server.
+   * @returns {Promise.<ImageGenerationResponse>} The response with the image.
+   * @public
+   */
+  async generateImage(req) {
+    return new Promise((resolve, reject) => {
+      this.imageServiceClient.generateImage(req, (err, resp) => {
+        if (err) {
+          reject(err);
+        } else {
+          resolve(resp);
+        }
+      });
+    });
+  }
+
+  /**
    * Sends a webhook if the webhook info is in the configuration.
    *
    * If the configuration is not set, returns a void promise.
@@ -102,5 +125,20 @@ module.exports = class Yuki extends Nagato {
     }
 
     return this.executeWebhook(this.apiKeys.webhook[0], this.apiKeys.webhook[1], content);
+  }
+
+  /**
+   * Creates a gRPC client to the image service server.
+   *
+   * @private
+   */
+  _createImageServiceClient() {
+    this.imageService = Grpc.load(`${__dirname}/../proto/proto/messages.proto`);
+    const { host, port } = this.yukiOptions.image_service;
+
+    this.imageServiceClient = new this.imageService.ImageGenerator(
+      `${host}:${port}`,
+      Grpc.credentials.createInsecure(),
+    );
   }
 };
