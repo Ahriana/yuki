@@ -1,3 +1,6 @@
 [submodule "proto"]
 	path = proto
 	url = git@github.com:yuki-bot/image-service-proto
+[submodule "locales"]
+	path = locales
+	url = git@github.com:yuki-bot/locales
