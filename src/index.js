@@ -55,7 +55,7 @@ async function initializeClient() {
    */
   const chisarok = new Chisarok({
     defaultFallback: 'en',
-    directory: `${__dirname}/../locales`,
+    directory: `${__dirname}/../locales/locales`,
   });
   await chisarok.load(yaml.safeLoad);
 
