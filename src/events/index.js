@@ -90,7 +90,28 @@ async function submit(raven, url, headers, data) {
   }
 }
 
+async function guildPatronCheck(guild, yukiGuild, roleId) {
+  let someoneHasRole = false;
+
+  for (let member of guild.members.values()) {
+    let yukiMember = yukiGuild.members.get(member.id);
+
+    if (!yukiMember) {
+      continue;
+    }
+
+    if (yukiMember.roles.includes(roleId)) {
+      someoneHasRole = true;
+    }
+  }
+
+  if (!someoneHasRole) {
+    await guild.leave();
+  }
+}
+
 module.exports = {
   formatGreeting,
+  guildPatronCheck,
   postGuildCount,
 };

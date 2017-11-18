@@ -2,6 +2,7 @@ const BaseEvent = require('nagato/lib/Abstracts/BaseEvent');
 const { webhookColour, WebhookStatus } = require('../utils');
 const { calculateReminder } = require('../commands/utilities');
 const { Reminder } = require('../db/models');
+const { guildPatronCheck } = require('.');
 
 module.exports = class Ready extends BaseEvent {
   constructor(bot) {
@@ -54,6 +55,30 @@ module.exports = class Ready extends BaseEvent {
         this.bot.capture('ready: ', e);
       }
 
+      if (this.bot.yukiOptions.patron && this.bot.yukiOptions.patron.enabled) {
+        for (let guild of this.bot.guilds.values()) {
+          let hasOwner = false;
+
+          for (let owner of this.bot.yukiOptions.Owners) {
+            if (guild.members.has(owner)) {
+              hasOwner = true;
+            }
+          }
+
+          if (!hasOwner) {
+            try {
+              guildPatronCheck(
+                guild,
+                this.bot.guilds.get(this.bot.yukiOptions.patron.guild_id),
+                this.bot.yukiOptions.patron.role_id,
+              );
+            } catch (e) {
+              this.bot.capture(e);
+            }
+          }
+        }
+      }
+
       await this.setReminders();
       await this.rejoinVoiceConnections();
       this.rotateStatus();
@@ -103,7 +128,7 @@ module.exports = class Ready extends BaseEvent {
       });
     }
 
-    connections.sort((a,b) => a.listeners - b.listeners);
+    connections.sort((a, b) => a.listeners - b.listeners);
 
     for (const { channelID, guildID, key } of connections) {
       const guild = this.bot.guilds.get(guildID);

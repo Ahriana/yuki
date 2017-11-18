@@ -72,3 +72,8 @@ redis:
 image_service:
   host: localhost
   port: 1
+
+patron:
+  enabled: true
+  guild_id: '0'
+  role_id: '1'
