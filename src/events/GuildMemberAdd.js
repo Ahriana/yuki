@@ -1,6 +1,6 @@
 const BaseEvent = require('nagato/lib/Abstracts/BaseEvent');
-const { formatGreeting } = require('./index');
-const { SettingType, updateLeaveOrWelcome } = require('../commands/admin/index');
+const { formatGreeting } = require('.');
+const { SettingType, updateLeaveOrWelcome } = require('../commands/admin');
 
 module.exports = class GuildMemberAdd extends BaseEvent {
   constructor(bot) {

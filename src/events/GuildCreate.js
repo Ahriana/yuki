@@ -1,5 +1,5 @@
 const BaseEvent = require('nagato/lib/Abstracts/BaseEvent');
-const { postGuildCount } = require('./index');
+const { postGuildCount } = require('.');
 
 module.exports = class GuildCreate extends BaseEvent {
   constructor(bot) {
