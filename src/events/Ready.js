@@ -70,7 +70,7 @@ module.exports = class Ready extends BaseEvent {
               guildPatronCheck(
                 guild,
                 this.bot.guilds.get(this.bot.yukiOptions.patron.guild_id),
-                this.bot.yukiOptions.patron.role_id,
+                this.bot.yukiOptions.patron.role_ids,
               );
             } catch (e) {
               this.bot.capture(e);

@@ -90,7 +90,7 @@ async function submit(raven, url, headers, data) {
   }
 }
 
-async function guildPatronCheck(guild, yukiGuild, roleId) {
+async function guildPatronCheck(guild, yukiGuild, roleIds) {
   let someoneHasRole = false;
 
   for (let member of guild.members.values()) {
@@ -100,8 +100,10 @@ async function guildPatronCheck(guild, yukiGuild, roleId) {
       continue;
     }
 
-    if (yukiMember.roles.includes(roleId)) {
-      someoneHasRole = true;
+    for (let roleId of roleIds) {
+      if (yukiMember.roles.includes(roleId)) {
+        someoneHasRole = true;
+      }
     }
   }
 

@@ -76,4 +76,7 @@ image_service:
 patron:
   enabled: true
   guild_id: '0'
-  role_id: '1'
+  role_ids:
+    - '1'
+    - '2'
+    - '3'
