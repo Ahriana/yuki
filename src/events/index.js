@@ -91,21 +91,19 @@ async function submit(raven, url, headers, data) {
 }
 
 async function guildPatronCheck(guild, yukiGuild, roleIds) {
-  let someoneHasRole = false;
-
-  for (let member of guild.members.values()) {
+  let someoneHasRole = guild.members.values().some(member => {
     let yukiMember = yukiGuild.members.get(member.id);
 
     if (!yukiMember) {
-      continue;
+      return false;
     }
 
     for (let roleId of roleIds) {
       if (yukiMember.roles.includes(roleId)) {
-        someoneHasRole = true;
+        return true;
       }
     }
-  }
+  });
 
   if (!someoneHasRole) {
     await guild.leave();
