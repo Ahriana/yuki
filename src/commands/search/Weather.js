@@ -235,7 +235,7 @@ module.exports = class Weather extends BaseCommand {
 
         summaryView = !summaryView;
       }
-    }, m.id, 30000);
+    }, m.id, 300000);
 
     await m.removeReactions();
   }
