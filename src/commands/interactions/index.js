@@ -1,5 +1,5 @@
 const axios = require('axios');
-
+const pkg = require('../../../package');
 /**
  * @param {string} type
  * @param {Yuki} bot
@@ -15,6 +15,7 @@ async function getImage(type, bot) {
       method: 'get',
       headers: {
         'Authorization': 'Bearer ' + bot.apiKeys.weebApi,
+        'user-agent':`Yuki/${pkg.version}`
       },
       params: {
         type: type,
